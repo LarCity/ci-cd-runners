@@ -1,0 +1,10 @@
+version: "3.6"
+
+services:
+  nginx-ng-cli:
+    build:
+      context: .
+      dockerfile: nginx-angular-cli.dockerfile
+    image: registry.docker.ho.larcity.org:5000/nginx-ng-cli
+    ports:
+      - 4200:8080
