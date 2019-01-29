@@ -40,8 +40,8 @@ RUN ng --version
 # EXAMPLE: Building your angular project
 #
 # # Building project
-# RUN cd ${WORKDIR} && yarn install
-# RUN cd ${WORKDIR} && yarn build/prod
+RUN cd ${WORKDIR} && yarn install
+RUN cd ${WORKDIR} && yarn build
 
 # Prepare static files to be hosted
 RUN chmod -R a+r ${APPDIR}

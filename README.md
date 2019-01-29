@@ -2,7 +2,11 @@
 
 This project was started to provide images that can be utilized to run GCP-side builds for LarCity app projects.
 
+Each of the runners will have a build configuration included in the `docker-compose.yml` file, starting with the `nginx-angular-cli` runner.
+
 ## nginx-angular-cli
+
+**Dockerfile** `nginx-angular-cli.dockerfile`
 
 This runner provides the following libaries:
 
