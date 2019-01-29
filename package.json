@@ -1,6 +1,6 @@
 {
   "name": "larcity-runners",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A project for \"baking\" runner images to speed up GCP container builds",
   "main": "www/index.html",
   "author": "Uche Chilaka<uche@lar.city>",
@@ -8,7 +8,9 @@
   "private": false,
   "scripts": {
     "build/container": "docker-compose build nginx-ng-cli",
-    "build": "webpack --config webpack.config.js"
+    "build": "webpack --config webpack.config.js",
+    "retag": "docker tag registry.docker.ho.larcity.org:5000/nginx-ng-cli larcity/nginx-ng-cli",
+    "deploy": "docker push larcity/nginx-ng-cli"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",

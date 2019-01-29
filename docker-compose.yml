@@ -2,6 +2,7 @@ version: "3.6"
 
 services:
   nginx-ng-cli:
+    container_name: nginx-ng-cli-example
     build:
       context: .
       dockerfile: nginx-angular-cli.dockerfile
